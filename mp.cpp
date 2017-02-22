@@ -17,7 +17,58 @@ using namespace std;
 ifstream indata;
 ofstream outdata;
 
+int hostname(string inp){
+	
+	char dot;
+	int lent=0,countd=0,countl=0;
+	lent=inp.size();
+	
+	for(int i=1;i<=lent;i++){
+		
+		dot = inp[i];
+		
+		if(dot == '.'){
+			countd++;
+		}
+		
+		else if(countd == 1)
+		{
+			countl++;
+		}
+		
+		else if(countd == 2){
+			break;
+		}
+		
+	}
+	
+	return(countl);
+	
+	
+	
+}
 
+
+int periodcount(string inp){
+	
+	char period;
+	int le=0,countp=0;
+	
+	le = inp.size();
+	
+	for(int i = 1 ; i<=le;i++){
+		
+		period = inp[i];
+		
+		if(period == '.')
+		{
+			countp++;
+		}
+		
+	}
+	
+	return(countp);
+}
 
 int domain_count(string inp){
 
@@ -118,7 +169,7 @@ int main(){
 	
 	
     outdata.open("domaincount.csv",ios_base::app);
-    outdata<<inp<<","<<domain_count(inp)<<","<<ll_of_domain_token(inp)<<","<<path_count(inp)<<","<<path_attcount(inp)<<endl;
+    outdata<<inp<<","<<hostname(inp)<<","<<inp.size()<<","<<periodcount(inp)<<","<<domain_count(inp)<<","<<ll_of_domain_token(inp)<<","<<path_count(inp)<<","<<path_attcount(inp)<<endl;
     outdata.close();
     
 	return 0;
