@@ -210,6 +210,9 @@ int main(){
 	else if(inp.find("/")<10000 && inp.find("?")>10000){
         mystr1 = inp.substr(inp.find("/", 0)+1, inp.size()-1);
 	}
+	else{
+		mystr1 = inp;
+	}
     outdata.open("domaincount.csv",ios_base::app);
     outdata<<inp<<","<<hostname(inp)<<","<<inp.size()<<","<<periodcount(inp)<<","<<domain_count(inp)<<","<<path_count(inp)<<","<<path_attcount(inp)<<","<<al_of_domain_token(mystr)<<","<<al_of_path_token(mystr1)<<","<<ll_of_domain_token(mystr)<<","<<ll_of_path_token(mystr1)<<endl;
     outdata.close();
