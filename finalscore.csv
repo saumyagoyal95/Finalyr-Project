@@ -1,0 +1,6 @@
+URL,L(HN),L(URL),N(DIN),N(DT),N(PT),N(PAT),A(DTC),A(PTC),LL(DT),LL(PT),Score
+"www.xyz.abc.aghakjfh.com/kdjsfbskdfb?id=66gf334kjaf3&lang=en&first_name=""Smith""&last_name=""jones""",3,97,4,3,1,4,4.66667,11,8,11,3.93533
+"www.abc.fghh.com/lskd/as/dw?id=""24""",3,35,3,2,3,1,3.5,2,4,4,2.6429
+"www.abc.fdeee.cef.com/alsdn/sk/alks/sdj?id=""22""",3,47,4,3,4,1,3.66667,3,5,5,3.59773
+www.google.com,6,14,2,1,0,0,6,14,6,14,2.47632
+www.en.wikipedia.org/wiki/Sorting_algorithm,2,43,3,2,2,0,5.5,nan,9,4,nan
