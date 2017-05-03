@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# Foundation Compass Template
 
-You can use the [editor on GitHub](https://github.com/saumyagoyal95/Finalyr-Project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The easiest way to get started with Foundation + Compass.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Requirements
 
-### Markdown
+  * Ruby 1.9+
+  * [Node.js](http://nodejs.org)
+  * [compass](http://compass-style.org/): `gem install compass`
+  * [bower](http://bower.io): `npm install bower -g`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Quickstart
 
-```markdown
-Syntax highlighted code block
+  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
+  * Run `bower install` to install the latest version of Foundation
+  
+Then when you're working on your project, just run the following command:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+bundle exec compass watch
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Upgrading
 
-### Jekyll Themes
+If you'd like to upgrade to a newer version of Foundation down the road just run:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/saumyagoyal95/Finalyr-Project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```bash
+bower update
+```
